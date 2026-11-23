@@ -461,10 +461,8 @@ a.chip:hover {
     justify-items: center;
     text-align: center;
   }
-  .footer__left {
-    display: none;
-  }
+  .footer__left,
   .footer__right {
-    text-align: center;
+    display: none;
   }
 }
