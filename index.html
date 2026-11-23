@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <title>Agentic Workshop — Setup Guide</title>
+    <meta
+      name="description"
+      content="Pre-requisites and setup checklist for the Workato Agentic Workshop."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Workato · Customer Workshop</p>
+        <h1 class="hero__title">Agentic Workshop</h1>
+        <p class="hero__sub">
+          <strong
+            >Complete the required account setup before the onsite
+            session to ensure you can participate in all exercises.</strong
+          >
+        </p>
+      </div>
+    </header>
+
+    <!-- ============ TABS ============ -->
+    <div class="panel">
+      <div class="tabs" role="tablist" aria-label="Setup guide sections">
+        <button
+          class="tab"
+          role="tab"
+          id="tab-prereqs"
+          aria-controls="panel-prereqs"
+          aria-selected="true"
+        >
+          Pre-requisites
+        </button>
+        <button
+          class="tab"
+          role="tab"
+          id="tab-checklist"
+          aria-controls="panel-checklist"
+          aria-selected="false"
+        >
+          Access Verification
+        </button>
+        <button
+          class="tab"
+          role="tab"
+          id="tab-build"
+          aria-controls="panel-build"
+          aria-selected="false"
+        >
+          What You'll Achieve
+        </button>
+      </div>
+
+      <div class="panel__body">
+        <!-- ============ PREREQUISITES ============ -->
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          id="panel-prereqs"
+          aria-labelledby="tab-prereqs"
+        >
+          <p class="kicker">Before you arrive</p>
+          <h2 class="panel__title">Required Accounts</h2>
+          <p class="panel__sub">
+            Create and verify access to each account before attending the
+            session.
+          </p>
+
+          <ol class="list">
+            <li class="row">
+              <span class="row__num">1</span>
+              <div class="row__body">
+                <h3 class="row__title">Workato Trial Account</h3>
+                <p class="row__desc">
+                  Workato workspace with 50K credits. You may use your personal or work email address to register (or work alias e.g. youremail+workato@domain.com).
+                </p>
+                <div class="chips">
+                  <a
+                    class="chip"
+                    href="https://app.trial.workato.com"
+                    target="_blank"
+                    rel="noopener"
+                    >app.trial.workato.com <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li class="row">
+              <span class="row__num">2</span>
+              <div class="row__body">
+                <h3 class="row__title">AI Assistant/LLM</h3>
+                <p class="row__desc">
+                  This will be used to (a) create/test custom MCP servers and (b) test AIRO MCP. This can be ChatGPT, Claude, AWS Quick or other tools can connect to MCP servers (free and paid works).
+                </p>
+                <div class="chips">
+                  <a
+                    class="chip"
+                    href="https://claude.ai"
+                    target="_blank"
+                    rel="noopener"
+                    >Claude <span aria-hidden="true">↗</span></a
+                  >
+                                    <a
+                    class="chip"
+                    href="https://chatgpt.com"
+                    target="_blank"
+                    rel="noopener"
+                    >ChatGPT <span aria-hidden="true">↗</span></a
+                  >
+                                    <a
+                    class="chip"
+                    href="https://quick.aws.com"
+                    target="_blank"
+                    rel="noopener"
+                    >AWS Quick <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li class="row">
+              <span class="row__num">3</span>
+              <div class="row__body">
+                <h3 class="row__title">One (1) application for MCP exercise</h3>
+                <p class="row__desc">
+                  Bring one application you already have access to, such as email, calendar, developer account for CRM or ITMS. You will connect it to Workato and expose it to an AI agent through an MCP server. Choose any one of the options below. Pick whichever you already have, or find quickest to set up.
+                </p>
+                <div class="chips">
+                  <a
+                    class="chip"
+                    href="https://accounts.google.com"
+                    target="_blank"
+                    rel="noopener"
+                    >Google Account <span aria-hidden="true">↗</span></a
+                  >
+                  <a
+                    class="chip"
+                    href="https://developer.salesforce.com/signup"
+                    target="_blank"
+                    rel="noopener"
+                    >Salesforce Account <span aria-hidden="true">↗</span></a
+                  >
+                  <a
+                    class="chip"
+                    href="https://www.freshworks.com/freshdesk/signup/"
+                    target="_blank"
+                    rel="noopener"
+                    >Freshdesk Account <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- ============ CHECKLIST ============ -->
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          id="panel-checklist"
+          aria-labelledby="tab-checklist"
+          hidden
+        >
+          <p class="kicker">Pre-session check</p>
+          <h2 class="panel__title">Confirm before you close the laptop</h2>
+          <p class="panel__sub" id="progress">0 of 4 checked in</p>
+
+          <div class="list list--form">
+            <label class="check">
+              <input type="checkbox" data-check="workato" />
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__text"
+                ><strong>Workato Trial account</strong> Log in to your
+                Workato workspace.</span
+              >
+            </label>
+            <label class="check">
+              <input type="checkbox" data-check="app2" />
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__text"
+                ><strong>Access to Agentic Workshop workspace</strong> — Once logged into Workato, switch to the "Agentic Workshop workspace".</span
+              >
+            </label>
+            <label class="check">
+              <input type="checkbox" data-check="app3" />
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__text"
+                ><strong>Access to Agentic tools</strong> — Once switched to the <strong>Agentic Workshop workspace</strong>, check the following:
+                <ul>
+                  <li><i>Left navigation -> Agent Studio</i></li>
+                  <li><i>Left navigation -> Enterprise MCP</i></li>
+
+                </ul>
+              </span
+            >
+          </label>
+          </div>
+        </section>
+
+        <!-- ============ WHAT YOU'LL ACHIEVE ============ -->
+        <section
+          class="tabpanel"
+          role="tabpanel"
+          id="panel-build"
+          aria-labelledby="tab-build"
+          hidden
+        >
+          <p class="kicker">Workshop goals</p>
+          <h2 class="panel__title">What you'll achieve</h2>
+          <p class="panel__sub">
+            By the end of the session, you will have worked hands-on with each
+            of the following.
+          </p>
+
+          <ol class="list">
+            <li class="row">
+              <span class="row__num">1</span>
+              <div class="row__body">
+                <h3 class="row__title">
+                  Use AI by Workato and IDP connectors
+                </h3>
+              </div>
+            </li>
+            <li class="row">
+              <span class="row__num">2</span>
+              <div class="row__body">
+                <h3 class="row__title">Build a Genie / AI Agent</h3>
+              </div>
+            </li>
+            <li class="row">
+              <span class="row__num">3</span>
+              <div class="row__body">
+                <h3 class="row__title">Build and test an MCP server</h3>
+              </div>
+            </li>
+            <li class="row">
+              <span class="row__num">4</span>
+              <div class="row__body">
+                <h3 class="row__title">Use AIRO and AIRO MCP</h3>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <p class="footer__left">Workato Agentic Workshop</p>
+      <p class="footer__center">Prerequisites &amp; Setup Guide</p>
+      <p class="footer__right">Onsite Workshop</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
